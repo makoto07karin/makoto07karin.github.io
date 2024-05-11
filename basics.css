@@ -32,3 +32,8 @@ ul li {
 /* 今回flexとgridの共通化ができるかのテストも兼ねる
 追加でgridはエリア・ラインを使用したことはあったが、トラックはまだなので
 ここで試してみる2024/05/11 */
+.grid-tracks{
+    display: grid;
+    grid-template-columns:  repeat(12, 1fr);
+    grid-template-rows: auto;
+}

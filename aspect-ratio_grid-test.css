@@ -2,3 +2,38 @@
 
 @import url("basics.css");
 /* ここからが本文 */
+.aspect-ratio_grid-test-content{
+    width: 100%;
+    height: auto;
+    background-color: #CBFFD3;
+}
+/* このファイルではトラックを使っている */
+.aspect-ratio_grid-test-title{
+    grid-column: span 3;
+    justify-self: center;
+}
+.tracks-main_title{
+    grid-column: span 9;
+}
+
+/* aspect-ratio_grid-testの内容 */
+.title-mark_grid{
+    width: 117%;
+    aspect-ratio: 1 / 1;
+    border-color: #2C7CFF;
+    border-style: solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.title-mark_grid p{
+    font-size: 2rem;
+    color: #2C7CFF;
+}
+.aspect-ratio_grid-test-content h1{
+    width: 100%;
+    color: #5507FF;
+    justify-self: start;
+    text-align: start;
+    align-self: center;
+}
