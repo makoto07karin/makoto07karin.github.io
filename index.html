@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="basics.css">
+    <link rel="stylesheet" href="aspect-ratio_sample.css">
+    <link rel="stylesheet" href="aspect-ratio_sample00.css">
+    <link rel="stylesheet" href="aspect-ratio_grid-test.css">
 
 <body>
 <section class="aspect-ratio_sample">
@@ -29,12 +31,30 @@
     </div>
 </section>
 <section class="aspect-ratio_sample00">
-    <div class="aspect-ratio_sample00-content">
-        <ul class="">
-            <li>
+    <div class="aspect-ratio_sample00-content aspect-ratio_flex">
+        <ul class="aspect-ratio_sample00-list aspect-ratio_flex-column">
+            <li class="sample00-list00-icon aspect-ratio_flex-column">
+                <p class="icon-top">サンプル</p>
+                <p class="icon-bottom">テスト</p>
+            </li>
+            <li class="list00-text-box">
+                <p class="list00-text">
+                    aspect-ratioを使ってpcspに対応できる記述の練習
+                </p>
+            </li>
         </ul>
     </div>
-
+</section>
+<section class="aspect-ratio_grid-test">
+    <div class="aspect-ratio_grid-test-content grid-column-test">
+        <div class="aspect-ratio_grid-test-title ">
+            <div class="title-mark_grid aspect-ratio_flex-column">
+                <p class="test_grid">テスト</p>
+                <p class="sample_grid">サンプル</p>
+            </div>
+        </div>
+        <h1>aspect-ratioでアイコンを作成してみよう</h1>
+    </div>
 </section>
     <!-- swiperのcdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url("basics.css");
+/* ここからが本文 */
+.aspect-ratio_sample00-content{
+    width: 100%;
+    height: auto;
+    background-color:#FFFFCC;
+    padding-bottom: 6%;
+}
+.aspect-ratio_sample00-list{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+/* 今回のテーマであるaspect-ratioの使用感と
+transformの関数であるtranslateでの要素の位置修正を実施 */
+.sample00-list00-icon{
+    width: 6%;
+    aspect-ratio: 1 / 1;
+    border-width: 3px;
+    border-color: #008080;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transform: translate(380%, 50px);
+    gap: 0px;
+}
+.sample00-list00-icon p{
+    font-size: 1.5rem;
+    color: #008080;
+}
+
+.icon-top{
+    width: 100%;
+    height: auto;
+    padding-top: 25%;
+}
+.icon-bottom{
+    width: 100%;
+    height: auto;
+    padding-top: 0%;
+}
+.list00-text-box{
+    width: 50%;
+    aspect-ratio: 2.5;
+    background-color:rgba(234,217,255,0.4);
+    margin-left: 25%;
+    padding-bottom: 1%;
+}
+.list00-text{
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+}
