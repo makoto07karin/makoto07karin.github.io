@@ -49,7 +49,7 @@ $(function(){
             $('.entry-error').text(error_text);
         } else {
             e.preventDefault();
-            $('.entry-error').text('当日お会いできるのを楽しみしております');
+            $('.entry-error').text('いつもと少し違う日を過ごしてみませんか？');
         }
     });
   });
