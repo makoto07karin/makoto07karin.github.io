@@ -145,8 +145,7 @@ h1{
         padding-left: calc(13 / 375* 100vw);
     }
      h1{
-            font-size: calc(48 / 375 * 100vw);
-
+            font-size: calc(35 / 375 * 100vw);
         }
     
     .header-fes-place{
@@ -225,13 +224,13 @@ header .blue-box{
     .header-main-days p{
         width: calc(345 / 375* 100vw);
         font-size: calc(32 / 375* 100vw);
-        padding-left: calc(66 / 375* 100vw);
+        padding-left: calc(0 / 375* 100vw);
     }
     .days-fes{
         width: calc(345 / 375* 100vw);
         height: calc(35 / 375* 100vw);
         padding-top: calc(4 / 375* 100vw);
-        padding-left: calc(109 / 375* 100vw);
+        padding-left: calc(104 / 375* 100vw);
         justify-content: unset;
     }
     .header-sub-days{
@@ -290,7 +289,7 @@ header .blue-box{
     .header-shop{
         width: calc(345 / 375* 100vw);
         height: auto;
-        padding-left: calc(52 / 375* 100vw);
+        padding-left: calc(0 / 375* 100vw);
     }
     .header-shop p{
         width: calc(345 / 375* 100vw);
@@ -309,7 +308,6 @@ header .blue-box{
         width: calc(345 / 375* 100vw);
         height: auto;
         font-size: calc(36 / 375* 100vw);
-        color: #1A1916;
-        padding-left: calc(64 / 375* 100vw);
+        padding-left: calc(0 / 375* 100vw);
     }
 }

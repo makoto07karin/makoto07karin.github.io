@@ -23,7 +23,7 @@
 @media screen and (max-width:767px) {
     .exhibition_booth-contents{
         margin-bottom: calc(0 / 375 * 100vw);
-        padding-bottom: calc(0 / 375 * 100vw);
+        padding-bottom: calc(211 / 375 * 100vw);
         height: calc(2243 / 375 * 100vw);
     }
 }
@@ -183,7 +183,7 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_01 .blue-triangle_font-right::before{
-        top: calc(-465 / 375 * 100vw);
+        top: calc(-386 / 375 * 100vw);
         right: calc(-273 / 375 * 100vw);
         border-bottom: calc(90 / 375 * 100vw) solid transparent;
         border-right: calc(90 / 375 * 100vw) solid #1F2774;
@@ -207,7 +207,7 @@
     .exhibition_01 .blue-triangle_font-right::after{
         content: "予約不要";
         position: absolute;
-        top: calc(-447 / 375 * 100vw);
+        top: calc(-371 / 375 * 100vw);
         right: calc(-273 / 375 * 100vw);
         width: calc(64 / 375 * 100vw);
     }
@@ -241,7 +241,7 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_02 .blue-triangle_font-left::before{
-        top: calc(-532 / 375 * 100vw);
+        top: calc(-478 / 375 * 100vw);
         left: calc(-7 / 375 * 100vw);
         border-bottom: calc(90 / 375 * 100vw) solid transparent;
         border-left: calc(90 / 375 * 100vw) solid #1F2774;
@@ -262,7 +262,7 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_02 .blue-triangle_font-left::after{
-        top: calc(-522 / 375 * 100vw);
+        top: calc(-470 / 375 * 100vw);
         left: calc(-7 / 375 * 100vw);
         width: calc(89 / 375 * 100vw);
     }
@@ -295,7 +295,7 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_03 .blue-triangle_font-right::before{
-        top: calc(-521 / 375 * 100vw);
+        top: calc(-470 / 375 * 100vw);
         right: calc(-273 / 375 * 100vw);
         border-bottom: calc(90 / 375 * 100vw) solid transparent;
         border-right: calc(90 / 375 * 100vw) solid #1F2774;
@@ -317,7 +317,7 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_03 .blue-triangle_font-right::after{
-        top: calc(-499 / 375 * 100vw);
+        top: calc(-453 / 375 * 100vw);
         right: calc(-276 / 375 * 100vw);
         width: calc(66 / 375 * 100vw);
     }
@@ -507,9 +507,9 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_01-main_text .exhibition_01-title_up{
-        width: calc(375 / 375 * 100vw);
+        width: calc(349 / 375 * 100vw);
         padding-top: calc(26 / 375 * 100vw);
-        padding-left: calc(97 / 375 * 100vw);
+        padding-left: calc(115 / 375 * 100vw);
     }
 }
 .exhibition_01-main_text .exhibition_01-title_up p{
@@ -529,8 +529,8 @@
 }
 @media screen and (max-width:767px) {
     .exhibition_01-main_text .exhibition_01-title_down{
-        width: calc(90 / 375 * 100vw);
-        margin-left: calc(142 / 375 * 100vw);
+        width: calc(100 / 375 * 100vw);
+        margin-left: calc(138 / 375 * 100vw);
         margin-top: calc(8 / 375 * 100vw);
     }
 }
@@ -654,7 +654,7 @@
 @media screen and (max-width:767px) {
     .exhibition_02-main_text .exhibition_02-title_up p{
         width: calc(200 / 375 * 100vw);
-        padding-left: calc(0 / 375 * 100vw);
+        padding-left: calc(40 / 375 * 100vw);
     }
 }
 .exhibition_02-main_text .exhibition_02-title_down{
@@ -789,7 +789,7 @@
 @media screen and (max-width:767px) {
     .exhibition_03-main_text .exhibition_03-title_up p{
         width: calc(242 / 375 * 100vw);
-        padding-left: calc(0 / 375 * 100vw);
+        padding-left: calc(47 / 375 * 100vw);
     }
 }
 @media screen and (max-width:767px) {

@@ -107,7 +107,7 @@
 }
 @media screen and (max-width:767px) {
     .map-access_title h3{
-        font-size: calc(48 / 375 * 100vw);
+        font-size: calc(42 / 375 * 100vw);
         width: calc(280 / 375 * 100vw);
       }
 }

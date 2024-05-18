@@ -69,7 +69,7 @@
 @media screen and (max-width:767px) {
     .input_form_list-main_title h4{
         width: calc(375 / 375 * 100vw);
-        font-size: calc(32.19 / 375 * 100vw);
+        font-size: calc(27 / 375 * 100vw);
         padding-right: calc(11 / 375 * 100vw);
     }
 }
@@ -81,6 +81,7 @@
 }
 @media screen and (max-width:767px) {
     .input_form_list-main_title span{
+        width: calc(271 / 375 * 100vw);
         margin-top: calc(9 / 375 * 100vw);
         margin-right: calc(6 / 375 * 100vw);
         margin-left: calc(0 / 375 * 100vw);

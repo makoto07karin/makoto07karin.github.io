@@ -174,7 +174,7 @@
 @media screen and (max-width:767px) {
     .mihune-background_border{
         width: calc(350 / 375 * 100vw);
-        margin-top: calc(122 / 375 * 100vw);
+        margin-top: calc(29 / 375 * 100vw);
         padding-bottom: calc(113 / 375 * 100vw);
     }
 }
@@ -198,7 +198,7 @@
             "brand_a-box"
             "brand_b-box";
         grid-template-columns: 100%;
-        grid-template-rows: 17% 23% 23% 23% 30%;
+        grid-template-rows: 29% 51% 23% 23% 30%;
         row-gap: calc(0 / 375 * 100vw);
         column-gap: calc(0 / 375 * 100vw);
     }
@@ -248,8 +248,8 @@
 }
 @media screen and (max-width:767px) {
     .mihune-title h2{
-        width: calc(127 / 375 * 100vw);
-        font-size: calc(48 / 375 * 100vw);
+        width: calc(300 / 375 * 100vw);
+        font-size: calc(34 / 375 * 100vw);
         padding-top: calc(0 / 375 * 100vw);
     }
 }
@@ -263,7 +263,7 @@
 }
 @media screen and (max-width:767px) {
     .mihune-title_underline{
-        width: calc(341 / 375 * 100vw);
+        width: calc(267 / 375 * 100vw);
         padding-top: calc(8 / 375 * 100vw);
     }
 }
@@ -275,7 +275,7 @@
 }
 @media screen and (max-width:767px) {
     .mihune-title_underline span{
-        width: calc(88 / 375 * 100vw);
+        width: calc(164 / 375 * 100vw);
         height: calc(5 / 375 * 100vw);
     }
 }
@@ -354,7 +354,7 @@
 }
 @media screen and (max-width:767px) {
     .mihune_a-box_text_title p{
-        width: calc(157 / 375 * 100vw);
+        width: calc(162 / 375 * 100vw);
         font-size: calc(24 / 375 * 100vw);
         padding-top: calc(0 / 375 * 100vw);
         padding-left: calc(42 / 375 * 100vw);
@@ -436,7 +436,7 @@
 }
 @media screen and (max-width:767px) {
     .mihune_b-box_text_title{
-        width: calc(100 / 375 * 100vw);
+        width: calc(120 / 375 * 100vw);
         padding-top: calc(0 / 375 * 100vw);
     }
 }
@@ -450,8 +450,8 @@
 }
 @media screen and (max-width:767px) {
     .mihune_b-box_text_title p{
-        width: calc(144 / 375 * 100vw);
-        font-size: calc(24 / 375 * 100vw);
+        width: calc(160 / 375 * 100vw);
+        font-size: calc(18 / 375 * 100vw);
         padding-top: calc(10 / 375 * 100vw);
         padding-left: calc(1 / 375 * 100vw);
         letter-spacing: 4px;
@@ -478,7 +478,7 @@
 }
 @media screen and (max-width:767px) {
     .mihune_b-box_text_main p{
-        width: calc(143 / 375 * 100vw);
+        width: calc(169 / 375 * 100vw);
         font-size: calc(14 / 375 * 100vw);
         padding-left: calc(0 / 375 * 100vw);
         line-height: 1.4;

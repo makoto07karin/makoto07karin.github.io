@@ -546,9 +546,9 @@
             "thesauna_01-box_text"
             ".";
         grid-template-columns: 100%;
-        grid-template-rows: 16% 
+        grid-template-rows: 19% 
         auto 22% auto auto 
-        27% auto auto 
+        15% auto auto 
         22% auto auto 
         29% auto auto;
         row-gap: calc(0 / 375 * 100vw);
@@ -584,7 +584,7 @@
 }
 @media screen and (max-width:767px) {
     .thesauna-title{
-        width: calc(300 / 375 * 100vw);
+        width: calc(350 / 375 * 100vw);
         padding-top: calc(59 / 375 * 100vw);
     }
 }
@@ -609,7 +609,7 @@
 }
 @media screen and (max-width:767px) {
     .thesauna-title h2{
-        width: calc(94 / 375 * 100vw);
+        width: calc(350 / 375 * 100vw);
         font-size: calc(48 / 375 * 100vw);
         padding-top: calc(0 / 375 * 100vw);
     }
@@ -664,8 +664,9 @@
     .thesauna_01-box_img img{
         width: calc(320 / 375 * 100vw);
         padding-top: calc(0 / 375 * 100vw);
-        padding-left: calc(19 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
         margin-top: calc(-9 / 375 * 100vw);
+        margin-left: calc(10 / 375 * 100vw);
     }
 }
 .thesauna_01-box_text{
@@ -700,7 +701,7 @@
 @media screen and (max-width:767px) {
     .thesauna_01-box_text_title p{
         width: calc(320 / 375 * 100vw);
-        font-size: calc(24 / 375 * 100vw);
+        font-size: calc(21 / 375 * 100vw);
         padding-top: calc(0 / 375 * 100vw);
         padding-left: calc(28 / 375 * 100vw);
         letter-spacing: 4px;
