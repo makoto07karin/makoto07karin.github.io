@@ -2,10 +2,12 @@
 <html lang="ja">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>aspect-ratioでアイコンを作成</title>
+    <title>ポートフォリオ用20240515</title>
     <!-- リセットcssとswiperとアニメーションのcdn -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
     <!-- フォントのcdn -->
@@ -13,57 +15,487 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="basics.css">
-    <link rel="stylesheet" href="aspect-ratio_sample.css">
-    <link rel="stylesheet" href="aspect-ratio_sample00.css">
-    <link rel="stylesheet" href="aspect-ratio_grid-test.css">
+
+    <link rel="stylesheet" href="css/basics.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mihune.css">
+    <link rel="stylesheet" href="css/thesauna.css">
+    <link rel="stylesheet" href="css/slick-loop-animation.css">
+    <link rel="stylesheet" href="css/exhibition_booth.css">
+    <link rel="stylesheet" href="css/map-access.css">
+    <link rel="stylesheet" href="css/input_form_list.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/anime.css">
 
 <body>
-<section class="aspect-ratio_sample">
-    <div class="aspect-ratio_sample-content aspect-ratio_flex">
-        <div class="aspect-ratio-title aspect-ratio_flex">
-            <div class="title-mark aspect-ratio_flex-column">
-                <p class="test">テスト</p>
-                <p class="sample">サンプル</p>
+    <header>
+        <div class="header-contents header-background header-grid animate__animated animate__fadeIn">
+            <div class="header-main">
+                <div class="header-title-block header-flex-column">
+
+                    <div class="header-title header-flex">
+                        <h1>おすすめのサウナ</h1>
+                    </div>
+                    <div class="header-fes-place header-flex">
+                        <p>in佐賀県</p>
+                    </div>
+                </div>
+                <div class="header-fes-days header-flex-row">
+                    <div class="header-main-days header-flex">
+                        <p>人生で一度は是非</p>
+                    </div>
+                    <div class="days-fes header-flex">
+                        <div class="header-sub-days blue-box">
+                            <p>御船山へ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main-fes-place header-flex-column">
+                    <div class="header-shop header-flex">
+                        <p>らかんの湯で</p>
+                    </div>
+                    <div class="header-sns header-flex">
+                        <p>極上の時間を</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <h1>aspect-ratioでアイコンを作成してみよう</h1>
-    </div>
-</section>
-<section class="aspect-ratio_sample00">
-    <div class="aspect-ratio_sample00-content aspect-ratio_flex">
-        <ul class="aspect-ratio_sample00-list aspect-ratio_flex-column">
-            <li class="sample00-list00-icon aspect-ratio_flex-column">
-                <p class="icon-top">サンプル</p>
-                <p class="icon-bottom">テスト</p>
+    </header>
+    <section class="mihune">
+        <!-- 聖杯モデルでtext・brand・eventの三つのエリアに分割する -->
+        <!-- textエリア -->
+        <div class="mihune-contents mihune-background">
+            <div class="mihune-text">
+                <div class="mihune-text_header">
+                    <ul class="mihune-text_lists text_grid">
+                        <li class="mihune-list00">サウナと温泉以外の楽しみ</li>
+                        <li class="mihune-list01" >
+                            <h2>御船山で<span>芸術</span>を体験</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- brandエリア -->
+            <div class="mihune-main mihune-grid mihune-background_border">
+                <!-- brand titleエリア -->
+                <div class="mihune-main-title mihune-title-flex">
+                    <div class="mihune-title">
+                        <h2>御船山での芸術は</h2>
+                    </div>
+                    <div class="mihune-title_underline">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- brand_aエリア -->
+                <div class="mihune_a-box mihune-flex">
+                    <div class="mihune_a-box_img">
+                        <img src="img/rabo.jpg" alt="blueberry">
+                    </div>
+                    <div class="mihune_a-box_text mihune-title-flex">
+                        <div class="mihune_a-box_text_title">
+                            <p>チームラボ</p>
+                        </div>
+                        <div class="mihune_a-box_text_main">
+                            <p>過去のイベントです。現在は新しい作品が展示されています。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- brand_bエリア -->
+                <div class="mihune_b-box mihune-flex" >
+                    <div class="mihune_b-box_img">
+                        <img src="img/bokasi.jpg" alt="smoothie-img">
+                    </div>
+                    <div class="mihune_b-box_text mihune-title-flex">
+                        <div class="mihune_b-box_text_title ">
+                            <p>作品の雰囲気を</p>
+                        </div>
+                        <div class="mihune_b-box_text_main">
+                            <p>是非！ご自身の目でご覧にいらしてください！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="thesauna">
+        <!-- 聖杯モデルでtext・brand・eventの三つのエリアに分割する -->
+        <!-- textエリア -->
+        <div class="thesauna-contents thesauna-background">
+            <div class="thesauna-text">
+                <div class="thesauna-text_header">
+                    <ul class="thesauna-text_lists text_grid">
+                        <li class="thesauna-list00"></li>
+                        <li class="thesauna-list01" >
+                            <h2>野尻湖で<span>最高のサウナ</span>を体験</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- eventエリア -->
+            <div class="thesauna-main thesauna-grid thesauna-background_border">
+                 <!-- event titleエリア -->
+                <div class="thesauna-main-title thesauna-title-flex">
+                    <div class="thesauna-title">
+                        <h2>長野の野尻湖『The Sauna』</h2>
+                    </div>
+                    <div class="thesauna-title_underline">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- thesauna_01エリア -->
+                <div class="thesauna_01-box_img">
+                    <img src="img/finsauna.jpg" class="zasauna_01-img animate__animated">
+                </div>
+                <div class="thesauna_01-box_text thesauna_text-flex">
+                    <div class="thesauna_01-box_text_title">
+                        <p>フィンランド式のサウナ</p>
+                    </div>
+                    <div class="thesauna_01-box_text_main">
+                        <p>薪の奏でる音と香りがあなたを包み、癒してくれます</p>
+                    </div>
+                </div>
+
+                <!-- thesauna_02エリア -->
+                <div class="thesauna_02-box_img">
+                    <img src="img/mizuburo.jpg"  class="thesauna_02-img animate__animated">
+                </div>
+                <div class="thesauna_02-box_text thesauna_text-flex">
+                    <div class="thesauna_02-box_text_title">
+                        <p>山の恵みの水</p>
+                    </div>
+                    <div class="thesauna_02-box_text_main">
+                        <p>全身で自然の冷たさに浸かる幸せ
+                            <br>全身で感じる自然の息吹
+                            <br>
+                            注意：水風呂が苦手でしたら、そのままも十〜分外気浴をお楽しめます！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slick-loop-animation">
+        <!-- ここのループでザサウナに行ったといきの季節の写真を流す -->
+        <div class="slick-loop-main">
+            <div class="slick-list">
+                <div class="loop-slide" >
+                    <img src="img/zasauna.jpg" alt="slide_01-img">
+                </div>
+                <div class="loop-slide">
+                    <img src="img/haru-zasauna.jpg" alt="slide_02-img">
+                </div>
+                <div class="loop-slide" >
+                    <img src="img/huyu-zanau.jpg" alt="slide_03-img">
+                </div>
+                <div class="loop-slide">
+                    <img src="img/haru-zagaiki.jpg" alt="slide_04-img">
+                </div>
+                <div class="loop-slide">
+                    <img src="img/huyu-tennto.jpg" alt="slide_05-img">
+                </div>
+                <div class="loop-slide">
+                    <img src="img/huyu-za-open.jpg" alt="slide_06-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="exhibition_booth">
+        <ul class="exhibition_booth-contents exhibition_booth-grid">
+            
+            <li class="exhibition_booth-title">
+                <!-- exhibition_booth-titleエリア -->
+                <div class="exhibition_booth-title_main exhibition_booth-flex_column">
+                    <h2>一度は足を運んでもらいたいサウナ</h2>
+                </div>
             </li>
-            <li class="list00-text-box">
-                <p class="list00-text">
-                    aspect-ratioを使ってpcspに対応できる記述の練習
-                </p>
+            <!-- img text エリア -->
+            <!-- exhibition_01 エリア -->
+            <li class="exhibition_01">
+                <div class="exhibition_flex">
+                    <div class="exhibition_01-img">
+                        <img src="img/inamura.jpg" alt="exhibition_01-img" class="exhibition_01-img-left animate__animated">
+                    </div>
+                    <div class="exhibition_01-main_text exhibition_booth-flex_column">
+                        <div class="exhibition_01-title  exhibition_booth-flex_column">
+                            <div class="exhibition_01-title_up up_font">
+                                <p>稲村ヶ崎温泉</p>
+                            </div>
+                            <span class="exhibition_01-title_down blue_underline"></span>
+                        </div>
+                        <div class="exhibition_01-text">
+                            <p>サウナと外気浴はいまいちですが…
+                                温泉は富士山と湘南の海を一望する時間。。。贅沢です！
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 三角の装飾 エリア -->
+                    <span class="blue-triangle_font-right"></span>
+                </div>
             </li>
+            <!-- exhibition_02 エリア -->
+            <li class="exhibition_02">
+                <div class="exhibition_flex exhibition_flex_row-reverse">
+                    <div class="exhibition_02-img">
+                        <img src="img/hakugin.jpg" alt="exhibition_02-img" class="exhibition_02-img-right animate__animated">
+                    </div>
+                    <div class="exhibition_02-main_text exhibition_booth-flex_column">
+                        <div class="exhibition_02-title  exhibition_booth-flex_column">
+                            <div class="exhibition_02-title_up up_font">
+                                <p>白銀荘</p>
+                            </div>
+                            <span class="exhibition_02-title_down blue_underline"></span>
+                        </div>
+                        <div class="exhibition_02-text">
+                            <p>アクセスが難しいのが難点…
+                                ですが、その苦労を忘れるだけの温泉とサウナが貴方を待っています…！                                
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 三角の装飾 エリア -->
+                    <span class="blue-triangle_font-left"></span>
+                </div>
+            </li>
+            <!-- exhibition_03 エリア -->
+            <li class="exhibition_03">
+                <div class="exhibition_flex">
+                    <div class="exhibition_03-img">
+                        <img src="img/tonbo01.jpg" alt="exhibition_03-img" class="exhibition_03-img-left animate__animated">
+                    </div>
+                    <div class="exhibition_03-main_text exhibition_booth-flex_column">
+                        <div class="exhibition_03-title  exhibition_booth-flex_column">
+                            <div class="exhibition_03-title_up up_font">
+                                <p>トンボの湯</p>
+                            </div>
+                            <span class="exhibition_03-title_down blue_underline"></span>
+                        </div>
+                        <div class="exhibition_03-text">
+                            <p>軽井沢にお越しの際は是非！
+                                ご家族で温泉を楽しむのも良し！
+                                サウナ室の窓から庭園風のお風呂を眺めるのも良し！
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 三角の装飾 エリア -->
+                    <span class="blue-triangle_font-right"></span>
+                </div>
+            </li>
+            <!-- exhibition_04 エリア -->
+            <li class="exhibition_04">
+                <div class="exhibition_flex exhibition_flex_row-reverse">
+                    <div class="exhibition_04-img">
+                        <img src="img/asahi.jpg" alt="exhibition_04-img" class="exhibition_04-img-right animate__animated">
+                    </div>
+                    <div class="exhibition_04-main_text exhibition_booth-flex_column">
+                        <div class="exhibition_04-title  exhibition_booth-flex_column">
+                            <div class="exhibition_04-title_up up_font">
+                                <p>江丹別マージナルサウナ</p>
+                            </div>
+                            <span class="exhibition_04-title_down red_underline"></span>
+                        </div>
+                        <div class="exhibition_04-text">
+                            <p>完全予約制なので、カップルや仲間たちとサウナを楽しむにピッタリです！
+                                大地と空を文字通り身体で感じられます…！
+                                北海道にお越しの際は、是非！
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 三角の装飾 エリア -->
+                    <span class="red-triangle_font-left"></span>
+                </div>
+            </li>
+            <li class="exhibition_booth-sp_bottom"></li>
         </ul>
-    </div>
-</section>
-<section class="aspect-ratio_grid-test">
-    <div class="aspect-ratio_grid-test-content grid-tracks">
-        <div class="aspect-ratio_grid-test-title">
-            <div class="title-mark_grid aspect-ratio_flex-column">
-                <p class="test_grid">テスト</p>
-                <p class="sample_grid">サンプル</p>
+    </section>
+
+    <section class="map-access">
+        <div class="map-access-container map-access-background map-access_grid">
+            <div class="map-access_title map-access_flex-column">
+                <h3>ザサウナの
+                    <br>アクセス方法</h3>
+            </div>
+            <div class="access-box">
+                <ul class="access_main map-access_flex-column">
+                    <li class="access_address map-access_flex-column">
+                        <p class="address-title">住所</p>
+                        <span class="address-sub">長野県上水内郡信濃町野尻379-2</span>
+                    </li>
+                    <li class="access_station map-access_flex-column">
+                        <p class="station-title">最寄り駅からのアクセス</p>
+                        <span class="station-sub">長野駅から黒姫駅
+                            <br>黒姫駅からタクシーの利用をお勧めします。雪の季節でも安全です。
+                        </span>
+                    </li>
+                    <li class="access-car map-access_flex-column">
+                        <p class="car-title">車・バイクでお越しの方 </p>
+                        <span class="car-sub">
+                            信濃町ICからになります。
+                            
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="map-box">
+                <div class="map_main">
+                    <iframe class="map00" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12774.849578479394!2d138.2046958!3d36.8254112!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x5ff62365f4ce9985%3A0x5c5e438fb65496a5!2zTEFNUOmHjuWwu-a5lg!5e0!3m2!1sja!2sjp!4v1713846774106!5m2!1sja!2sjp" width="657" height="577" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="map01" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12774.849578479394!2d138.2046958!3d36.8254112!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x5ff62365f4ce9985%3A0x5c5e438fb65496a5!2zTEFNUOmHjuWwu-a5lg!5e0!3m2!1sja!2sjp!4v1713846774106!5m2!1sja!2sjp" width="375" height="333" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-        <h1 class="tracks-main_title">aspect-ratioでアイコンを作成してみよう</h1>
-    </div>
-</section>
-    <!-- swiperのcdn -->
+    </section>
+    <section class="input_form_list">
+        <div class="input_form_list-container input_form_list-grid input_form_list-background">
+            <div class="input_form_list-main_title input_form_list-flex-column">
+                <h4>入力フォームも作成できます『申し込む』をクリック！</h4>
+                <span></span>
+            </div>
+            <div class="input_form_list-sub_title input_form_list-flex" id="jump">
+                <p>お客様情報のご入力</p>
+            </div>
+            <form class="input_form_list-form" action="#" method="post">
+                <div class="input_form_list-border">
+                    <ul class="input_form_list-name-box form_list-flex">
+                        <li class="name-box input_form_list-middle-grid">
+                            <label class="name-label">お名前</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="username" placeholder="例)　山田花子" class="name-input">
+                        </li>
+                        <li class="name-box-kana input_form_list-middle-grid">
+                            <label class="kana-label">フリガナ</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="userkana" placeholder="例)　ヤマダハナコ" class="kana-input">
+                        </li>
+                    </ul>
+                    <ul class="input_form_list-address-box form_list-flex">
+                        <li class="address-box-post_code input_form_list-short-grid">
+                            <label class="post-label">郵便番号</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="userpost" placeholder="例)　0000000" class="post-input" >
+                        </li>
+                        <li class="address-box-prefectures input_form_list-short-grid">
+                            <label class="prefectures-label">都道府県</label>
+                            <span class="red-need">必須</span>
+                            <select name="prefectures" id="prefectures" class="prefectures-select">
+                                <option value="" selected>選択してください</option>
+                                <option value="北海道">北海道</option>
+                                <option value="青森県">青森県</option>
+                                <option value="岩手県">岩手県</option>
+                                <option value="宮城県">宮城県</option>
+                                <option value="秋田県">秋田県</option>
+                                <option value="山形県">山形県</option>
+                                <option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option>
+                                <option value="栃木県">栃木県</option>
+                                <option value="群馬県">群馬県</option>
+                                <option value="埼玉県">埼玉県</option>
+                                <option value="千葉県">千葉県</option>
+                                <option value="東京都">東京都</option>
+                                <option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option>
+                                <option value="富山県">富山県</option>
+                                <option value="石川県">石川県</option>
+                                <option value="福井県">福井県</option>
+                                <option value="山梨県">山梨県</option>
+                                <option value="長野県">長野県</option>
+                                <option value="岐阜県">岐阜県</option>
+                                <option value="静岡県">静岡県</option>
+                                <option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option>
+                                <option value="滋賀県">滋賀県</option>
+                                <option value="京都府">京都府</option>
+                                <option value="大阪府">大阪府</option>
+                                <option value="兵庫県">兵庫県</option>
+                                <option value="奈良県">奈良県</option>
+                                <option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option>
+                                <option value="島根県">島根県</option>
+                                <option value="岡山県">岡山県</option>
+                                <option value="広島県">広島県</option>
+                                <option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option>
+                                <option value="香川県">香川県</option>
+                                <option value="愛媛県">愛媛県</option>
+                                <option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option>
+                                <option value="佐賀県">佐賀県</option>
+                                <option value="長崎県">長崎県</option>
+                                <option value="熊本県">熊本県</option>
+                                <option value="大分県">大分県</option>
+                                <option value="宮崎県">宮崎県</option>
+                                <option value="鹿児島県">鹿児島県</option>
+                                <option value="沖縄県">沖縄県</option>
+                            </select>
+                               
+                        </li>
+                        <li class="address-box-municipalities input_form_list-long-grid">
+                            <label class="municipalities-label">市区町村</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="municipalities" placeholder="例)　○○市△△区□町0-0" class="municipalities-input">
+                        </li>
+                        <li class="address-box-apartment input_form_list-long-grid">
+                            <label class="apartment-label">マンション名</label>
+                            <span class="blue-any">任意</span>
+                            <input type="text" id="apartment" placeholder="例)　○○マンション101号" class="apartment-input">
+                        </li>
+                    </ul>
+                    <ul class="input_form_list-contact-box form_list-flex">
+                        <li class="contact-box-tel input_form_list-middle-grid">
+                            <label class=" tel-label">電話番号</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="usertel" placeholder="例)　00000000000" class="tel-input">
+                        </li>
+                        <li class="contact-box-mail input_form_list-long-grid">
+                            <label  class="mail-label">メールアドレス</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="usermail" placeholder="例)　○○@example.com" class="mail-input">
+                        </li>
+                    </ul>
+                    <ul class="input_form_list-password-box">
+                        <li class="password-box input_form_list-middle-grid">
+                            <label class="password-label">パスワード</label>
+                            <span class="red-need">必須</span>
+                            <input type="text" id="userpass" placeholder="4文字以上、英数字含む" class="password-input">
+                        </li>
+                    </ul>
+                </div>
+                <div class="entry-text">
+                    <p class="entry-error"></p>
+                </div>
+
+                <button type="submit" class="input_form_list-form-button input_form_list-flex">
+                    <span class="button-label">申し込む</span>
+                </button>
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container footer-flex-columns">
+            <ul class="footer-title footer-title-grid">
+                <li class="service"><a href="#">利用規約</a></li>
+                <li class="personal"><a href="#">個人情報について</a></li>
+                <li class="cookie"><a href="#">Cookieの設定</a></li>
+                <li class="policy"><a href="#">ソーシャルメディアポリシー</a></li>
+                <li class="side-map"><a href="#">サイトマップ</a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- Slick.jQueryのcdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/39e3e9f089.js" crossorigin="anonymous"></script>
 
+
+    <!-- waypointのcdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js"></script>
     
     
-    <script src="js/main.js"></script>
+
+    <script src="js/thesauna.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/exhibition_booth.js"></script>
+    <script src="js/input-from.js"></script>
 
 
 </body>

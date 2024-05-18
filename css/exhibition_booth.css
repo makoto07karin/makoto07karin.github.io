@@ -1,0 +1,1008 @@
+@charset "UTF-8";
+
+@import url("basics.css");
+/* 下準備は共通でここまでに記述する */
+/* exhibition_boothのgridとflex部分 */
+.exhibition_booth-contents{
+    width: 100%;
+    height: auto;
+    padding-top: 2.3%;
+    background-color: #f8e3a6;
+    padding-bottom: 23.3%;
+}
+@media screen and (max-width:1025px) {
+    .exhibition_booth-contents{
+        padding-top: 0%;
+    }
+}
+@media screen and (max-width:980px) {
+    .exhibition_booth-contents{
+        padding-bottom: 27%;
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-contents{
+        margin-bottom: calc(0 / 375 * 100vw);
+        padding-bottom: calc(0 / 375 * 100vw);
+        height: calc(2243 / 375 * 100vw);
+    }
+}
+.exhibition_booth-grid{
+    display: grid;
+    grid-template-areas:
+        "exhibition_booth-title exhibition_booth-title ."
+        ". exhibition_01 ."
+        ". . ."
+        ". exhibition_02  ."
+        ". . ."
+        ". exhibition_03  ."
+        ". . ."
+        ". exhibition_04  .";
+    grid-template-columns: 15% minmax(auto,70%) 15%;
+    grid-template-rows: 13% minmax(auto,30%)  
+    4.5%  minmax(auto,30%)  
+    5% minmax(auto,30%) 
+     4%  minmax(auto,30%);
+}
+@media screen and (max-width:980px) {
+    .exhibition_booth-grid{
+        grid-template-areas:
+            "exhibition_booth-title exhibition_booth-title ."
+            ". exhibition_01 ."
+            ". . ."
+            ". exhibition_02  ."
+            ". . ."
+            ". exhibition_03  ."
+            ". . ."
+            ". exhibition_04  .";
+        grid-template-columns: 8% minmax(auto,80%) 5%;
+        grid-template-rows: 13% 
+        minmax(auto,23%) 3% 
+        minmax(auto,23%) 3%
+        minmax(auto,23%) 3%
+        minmax(auto,23%);
+        row-gap: 1%;
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-grid{
+        grid-template-areas:
+            "exhibition_booth-title"
+            "exhibition_01"
+            "exhibition_01"
+            "exhibition_02"
+            "exhibition_02"
+            "exhibition_03"
+            "exhibition_03"
+            "exhibition_04"
+            "exhibition_04"
+            "exhibition_booth-sp_bottom";
+        grid-template-columns: 100%;
+        grid-template-rows: 4% 25% 2% 15% 10% 14% 11% 23.6% 0% 0%;
+    }
+}
+.exhibition_booth-flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.exhibition_flex{
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_flex{
+        flex-direction: column;
+    }
+}
+.exhibition_flex_row-reverse{
+    flex-direction: row-reverse;
+}
+@media screen and (max-width:767px) {
+    .exhibition_flex_row-reverse{
+        flex-direction: column;
+    }
+}
+/* exhibition_booth-title部分 */
+.exhibition_booth-title{
+    width: 100%;
+    height: auto;
+    grid-area: exhibition_booth-title;
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-title{
+        width: calc(375 / 375 * 100vw);
+        height: auto;
+        grid-area: exhibition_booth-title;
+    }
+}
+.exhibition_booth-title_main{
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-title_main{
+        width: calc(375 / 375 * 100vw);
+        height: auto;
+        padding-top: calc(55 / 375 * 100vw);
+        padding-left: calc(18 / 375 * 100vw);
+    }
+}
+.exhibition_booth-title_main h2{
+    width: 100%;
+    height: auto;
+    font-size: 6.4rem;
+    color: #1A1916;
+    font-weight: bold;
+    padding-left: 8.9%;
+}
+@media screen and (max-width:1025px) {
+    .exhibition_booth-title_main h2{
+        width: 100%;
+        padding-left: 3%;
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-title_main h2{
+        width: calc(350 / 375 * 100vw);
+        height: auto;
+        font-size: calc(34 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+
+/* img text エリア部分 */
+
+/* 三角の装飾 rightエリア部分 */
+/* exhibition_01 rightエリア部分 */
+.blue-triangle_font-right{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-title_main span{
+        width: calc(88 / 375 * 100vw);
+        height: calc(6 / 375 * 100vw);
+        margin-top: calc(6 / 375 * 100vw);
+        margin-left: calc(6 / 375 * 100vw);
+    }
+}
+.exhibition_01 .blue-triangle_font-right::before{
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -1%;
+    border-bottom: 9.9rem solid transparent;
+    border-right: 9.9rem solid #1F2774;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01 .blue-triangle_font-right::before{
+        top: calc(-465 / 375 * 100vw);
+        right: calc(-273 / 375 * 100vw);
+        border-bottom: calc(90 / 375 * 100vw) solid transparent;
+        border-right: calc(90 / 375 * 100vw) solid #1F2774;
+        z-index: 2;
+    }
+}
+.exhibition_01 .blue-triangle_font-right::after{
+    content: "予約不要";
+    position: absolute;
+    top: 36%;
+    right: -53%;
+    width: 10rem;
+    transform: rotate(45deg);
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.7;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01 .blue-triangle_font-right::after{
+        content: "予約不要";
+        position: absolute;
+        top: calc(-447 / 375 * 100vw);
+        right: calc(-273 / 375 * 100vw);
+        width: calc(64 / 375 * 100vw);
+    }
+}
+/* 三角の装飾 leftエリア部分 */
+/* exhibition_02 leftエリア部分 */
+.blue-triangle_font-left{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .blue-triangle_font-left{
+        width: calc(30 / 375 * 100vw);
+        height: calc(30 / 375 * 100vw);
+        margin-top: calc(9 / 375 * 100vw);
+        margin-left: calc(6 / 375 * 100vw);
+    }
+}
+.exhibition_02 .blue-triangle_font-left::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    border-bottom: 9.7rem solid transparent;
+    border-left: 9.7rem solid #1F2774;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02 .blue-triangle_font-left::before{
+        top: calc(-532 / 375 * 100vw);
+        left: calc(-7 / 375 * 100vw);
+        border-bottom: calc(90 / 375 * 100vw) solid transparent;
+        border-left: calc(90 / 375 * 100vw) solid #1F2774;
+    }
+}
+.exhibition_02 .blue-triangle_font-left::after{
+    content: "予約不要";
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    width: 10rem;
+    transform: rotate(-45deg);
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.7;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02 .blue-triangle_font-left::after{
+        top: calc(-522 / 375 * 100vw);
+        left: calc(-7 / 375 * 100vw);
+        width: calc(89 / 375 * 100vw);
+    }
+}
+/* exhibition_03 rightエリア部分 */
+.blue-triangle_font-right{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .exhibition_booth-title_main span{
+        width: calc(88 / 375 * 100vw);
+        height: calc(6 / 375 * 100vw);
+        margin-top: calc(6 / 375 * 100vw);
+        margin-left: calc(6 / 375 * 100vw);
+    }
+}
+.exhibition_03 .blue-triangle_font-right::before{
+    content: "";
+    position: absolute;
+    top: 1%;
+    right: -1%;
+    border-bottom: 9.4rem solid transparent;
+    border-right: 9.4rem solid #1F2774;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03 .blue-triangle_font-right::before{
+        top: calc(-521 / 375 * 100vw);
+        right: calc(-273 / 375 * 100vw);
+        border-bottom: calc(90 / 375 * 100vw) solid transparent;
+        border-right: calc(90 / 375 * 100vw) solid #1F2774;
+        z-index: 2;
+    }
+}
+.exhibition_03 .blue-triangle_font-right::after{
+    content: "予約不要";
+    position: absolute;
+    top: 32%;
+    right: -55%;
+    width: 10rem;
+    transform: rotate(45deg);
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.7;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03 .blue-triangle_font-right::after{
+        top: calc(-499 / 375 * 100vw);
+        right: calc(-276 / 375 * 100vw);
+        width: calc(66 / 375 * 100vw);
+    }
+}
+/* exhibition_04 leftエリア部分 */
+.red-triangle_font-left{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .red-triangle_font-left{
+        width: calc(30 / 375 * 100vw);
+        height: calc(30 / 375 * 100vw);
+        margin-top: calc(6 / 375 * 100vw);
+        margin-left: calc(6 / 375 * 100vw);
+    }
+}
+.red-triangle_font-left::before{
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    border-bottom: 9.4rem solid transparent;
+    border-left: 9.4rem solid #7F0019;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .red-triangle_font-left::before{
+        top: calc(-528 / 375 * 100vw);
+        left: calc(-5 / 375 * 100vw);
+        border-bottom: calc(90 / 375 * 100vw) solid transparent;
+        border-left: calc(90 / 375 * 100vw) solid #7F0019;
+    }
+}
+.red-triangle_font-left::after{
+    content: "要予約";
+    position: absolute;
+    top: 9%;
+    left: -18%;
+    width: 10rem;
+    transform: rotate(-45deg);
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.7;
+    z-index: 2;
+}
+@media screen and (max-width:767px) {
+    .red-triangle_font-left::after{
+        top: calc(-521 / 375 * 100vw);
+        left: calc(2 / 375 * 100vw);
+        width: calc(89 / 375 * 100vw);
+    }
+}
+
+/* exhibition_01から04のフォント*/
+.up_font{
+    font-size: 3.6rem;
+    color: #1A1916;
+    font-weight: bold;
+}
+@media screen and (max-width:1024px) {
+    .up_font{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:980px) {
+    .up_font{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .up_font{
+        font-size: calc(24 / 375 * 100vw);
+    }
+}
+/* exhibition_01から04の共通*/
+/* .exhibition_01-main_text,.exhibition_02-main_text,
+.exhibition_03-main_text,.exhibition_04-main_text{
+    background-color: #FFFFFF;
+} */
+.exhibition_01,.exhibition_02,
+.exhibition_03,.exhibition_04{
+    background-color: #FFFFFF;
+}
+/* exhibition_01から04のunderline*/
+.blue_underline{
+    background-color: #1F2774;
+    width: 9rem;
+    height: 0.6rem;
+}
+@media screen and (max-width:767px) {
+    .blue_underline{
+        font-size: calc(24 / 375 * 100vw);
+        width: calc(91 / 375 * 100vw);
+        height: calc(6 / 375 * 100vw);
+    }
+}
+.red_underline{
+    background-color: #7F0019;
+    width: 9rem;
+    height: 0.6rem;
+}
+@media screen and (max-width:767px) {
+    .red_underline{
+        font-size: calc(24 / 375 * 100vw);
+        width: calc(91 / 375 * 100vw);
+        height: calc(6 / 375 * 100vw);
+    }
+}
+/* exhibition_01部分 */
+
+.exhibition_01{
+    width: 100%;
+    height: auto;
+    grid-area: exhibition_01;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01{
+        width: calc(375 / 375 * 100vw);
+        grid-area: exhibition_01;
+        margin-top: calc(76 / 375 * 100vw);
+        margin-bottom: calc(11 / 375 * 100vw);
+    }
+}
+.exhibition_01-img{
+    width: 100%;
+    height: auto;
+    /* background-color: #FFFFFF; */
+}
+@media screen and (max-width:980px) {
+    .exhibition_01-img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-img{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-left:calc(0 / 375 * 100vw);
+    }
+}
+
+.exhibition_01-img img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-img img{
+        width: calc(375 / 375 * 100vw);
+        height: calc(241 / 375 * 100vw);
+    }
+}
+
+.exhibition_01-main_text{
+    width: 89%;
+    height: auto;
+    margin-right: 0%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text{
+        width: calc(375 / 375 * 100vw);
+        margin-top: calc(0 / 375 * 100vw);
+        margin-right: calc(0 / 375 * 100vw);
+        padding-bottom: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-title{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-title{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-title_up{
+    width: 100%;
+    height: auto;
+    padding-top: 14.5%;
+    padding-left: 19%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-title_up{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(26 / 375 * 100vw);
+        padding-left: calc(97 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-title_up p{
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-title_up p{
+        width: calc(192 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-title_down{
+    margin-left: 41.8%;
+    margin-top: 1.5%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-title_down{
+        width: calc(90 / 375 * 100vw);
+        margin-left: calc(142 / 375 * 100vw);
+        margin-top: calc(8 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-title_down span{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-title_down span{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-text{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_01-main_text .exhibition_01-text p{
+    width: 105%;
+    height: auto;
+    font-size: 1.6rem;
+    color: #1A1916;
+    font-weight: bold;
+    line-height: 1.7;
+    padding-top: 5.3%;
+    padding-left: 6%;
+}
+@media screen and (max-width:1025px) {
+    .exhibition_01-main_text .exhibition_01-text p{
+        font-size: 1rem;
+
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_01-main_text .exhibition_01-text p{
+        width: calc(365 / 375 * 100vw);
+        font-size: calc(16 / 375 * 100vw);
+        padding-top: calc(21 / 375 * 100vw);
+        padding-left: calc(17 / 375 * 100vw);
+    }
+}
+/* exhibition_02部分 */
+.exhibition_02{
+    width: 100%;
+    height: auto;
+    grid-area: exhibition_02;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02{
+        width: calc(375 / 375 * 100vw);
+        margin-left: calc(0 / 375 * 100vw);
+        grid-area: exhibition_02;
+        margin-top: calc(30 / 375 * 100vw);
+        margin-bottom: calc(12 / 375 * 100vw);
+    }
+}
+.exhibition_02-img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-img{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-right:calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_02-img img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-img img{
+        width: calc(375 / 375 * 100vw);
+        height: calc(243 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text{
+        width: calc(375 / 375 * 100vw);
+        margin-top: calc(0 / 375 * 100vw);
+        margin-left: calc(0 / 375 * 100vw);
+        padding-bottom: calc(56 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-title{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-title{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-title_up{
+    width: 100%;
+    height: auto;
+    padding-top: 14%;
+    padding-left: 14%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-title_up{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(26 / 375 * 100vw);
+        padding-left: calc(107 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-title_up p{
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-title_up p{
+        width: calc(200 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-title_down{
+    margin-left: 30.5%;
+    margin-top: 1.2%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-title_down{
+        margin-left: calc(141 / 375 * 100vw);
+        margin-top: calc(8 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-title_down span{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-title_down span{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-text{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_02-main_text .exhibition_02-text p{
+    width: 96%;
+    height: auto;
+    font-size: 1.6rem;
+    color: #1A1916;
+    font-weight: bold;
+    line-height: 1.7;
+    padding-top: 5.4%;
+    padding-right: 0%;
+    margin-left: -4%;
+}
+@media screen and (max-width:1025px) {
+    .exhibition_02-main_text .exhibition_02-text  p{
+        font-size: 1rem;
+
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_02-main_text .exhibition_02-text p{
+        width: calc(369 / 375 * 100vw);
+        font-size: calc(16 / 375 * 100vw);
+        padding-top: calc(20 / 375 * 100vw);
+        padding-left: calc(31 / 375 * 100vw);
+        padding-right: calc(0 / 375 * 100vw);
+    }
+}
+/* exhibition_03部分 */
+.exhibition_03{
+    width: 100%;
+    height: auto;
+    grid-area: exhibition_03;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03{
+        width: calc(375 / 375 * 100vw);
+        margin-top: calc(17 / 375 * 100vw);
+        grid-area: exhibition_03;
+        margin-bottom: calc(18 / 375 * 100vw);
+    }
+}
+.exhibition_03-img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-img{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-left:calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_03-img img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-img img{
+        width: calc(375 / 375 * 100vw);
+        height: calc(242 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text{
+    width: 100%;
+    height: auto;
+    margin-right: 0%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text{
+        width: calc(375 / 375 * 100vw);
+        margin-top: calc(0 / 375 * 100vw);
+        margin-right: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-title{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-title{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-title_up{
+    width: 100%;
+    height: auto;
+    padding-top: 12%;
+    padding-left: 12%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-title_up{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(27 / 375 * 100vw);
+        padding-left: calc(71 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-title_up p{
+    width: 100%;
+    height: auto;
+    padding-left: 1.5%;
+    padding-top: 2%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-title_up p{
+        width: calc(242 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-text p{
+        width: calc(375 / 375 * 100vw);
+        font-size: calc(16 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-title_down{
+    margin-left: 41.8%;
+    margin-top: 1.5%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-title_down{
+        margin-left: calc(142 / 375 * 100vw);
+        margin-top: calc(6 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-title_down span{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-title_down span{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-text{
+        width: calc(375 / 375 * 100vw);
+        padding-bottom: calc(57 / 375 * 100vw);
+    }
+}
+.exhibition_03-main_text .exhibition_03-text p{
+    width: 104%;
+    height: auto;
+    font-size: 1.6rem;
+    color: #1A1916;
+    font-weight: bold;
+    line-height: 1.7;
+    padding-top: 5.1%;
+    padding-left: 7%;
+}
+@media screen and (max-width:1025px) {
+    .exhibition_03-main_text .exhibition_03-text  p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_03-main_text .exhibition_03-text p{
+        width: calc(365 / 375 * 100vw);
+        font-size: calc(16 / 375 * 100vw);
+        padding-top: calc(17 / 375 * 100vw);
+        padding-left: calc(17 / 375 * 100vw);
+    }
+}
+/* exhibition_04部分 */
+.exhibition_04{
+    width: 100%;
+    height: auto;
+    grid-area: exhibition_04;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04{
+        width: calc(375 / 375 * 100vw);
+        margin-left: calc(0 / 375 * 100vw);
+        margin-top: calc(14 / 375 * 100vw);
+        grid-area: exhibition_04;
+    }
+}
+.exhibition_04-img{
+    width: 97%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-img{
+        width: calc(375 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-right:calc(0 / 375 * 100vw);
+        margin-top: calc(-3 / 375 * 100vw);
+    }
+}
+.exhibition_04-img img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:980px) {
+    .exhibition_04-img img{
+        width: 84%;
+        height: auto;
+    }
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-img img{
+        width: calc(375 / 375 * 100vw);
+        height: calc(241 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-main_text{
+        width: calc(375 / 375 * 100vw);
+        margin-top: calc(0 / 375 * 100vw);
+        margin-left: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-title{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-main_text .exhibition_04-title{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-title_up{
+    width: 100%;
+    height: auto;
+    padding-top: 14.4%;
+    padding-left: 14%;
+}
+@media screen and (max-width: 767px) {
+    .exhibition_04-main_text .exhibition_04-title_up{
+        width: calc(65 / 375 * 100vw);
+        padding-top: calc(29 / 375 * 100vw);
+        padding-left: calc(108 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-title_up p{
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-main_text .exhibition_04-title_up p{
+        width: calc(200 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-title_down{
+    margin-left: 31.3%;
+    margin-top: 1.2%;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-main_text .exhibition_04-title_down{
+        margin-left: calc(140 / 375 * 100vw);
+        margin-top: calc(7 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-title_down span{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-main_text .exhibition_04-title_down span{
+        width: calc(375 / 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .exhibition_04-main_text .exhibition_04-text{
+        width: calc(375 / 375 * 100vw);
+        padding-bottom: calc(56/ 375 * 100vw);
+    }
+}
+.exhibition_04-main_text .exhibition_04-text p{
+    width: 99%;
+    height: auto;
+    font-size: 1.6rem;
+    color: #1A1916;
+    font-weight: bold;
+    line-height: 1.7;
+    padding-top: 5.3%;
+    margin-left: -4%;
+    letter-spacing: 0.01rem;
+}
+@media screen and (max-width:1025px) {
+    .exhibition_04-main_text .exhibition_04-text p{
+        font-size: 1rem;
+
+    }
+}
+@media screen and (max-width:767px){
+    .exhibition_04-main_text .exhibition_04-text p{
+        width: calc(372 / 375 * 100vw);
+        font-size: calc(16 / 375 * 100vw);
+        padding-top: calc(19 / 375 * 100vw);
+        padding-left: calc(31 / 375 * 100vw);
+    }
+}
+
+/* exhibition_booth-sp_bottom部分 */
+.exhibition_booth-sp_bottom{
+    display: none;
+}
+@media screen and (max-width:767px){
+    .exhibition_booth-sp_bottom{
+        width: calc(375 / 375 * 100vw);
+        height: calc(41 / 375 * 100vw);
+        grid-area: exhibition_booth-sp_bottom;
+        background: #f8e3a6;
+        display: block;
+    }
+}

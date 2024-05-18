@@ -1,0 +1,14 @@
+/* header animate__fadeInUp */
+.animate__animated{
+    opacity: 0;
+}
+:root{
+    --animate-duration: 2s;
+}
+/* サウナのアニメーション*/
+.animate__fadeInRight{
+    opacity: 0;
+}
+.animate__fadeInLeft{
+    opacity: 0;
+}

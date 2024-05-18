@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+@import url("basics.css");
+/* 下準備は共通でここまでに記述する */
+
+/* header内のgrid */
+.header-grid{
+    display: grid;
+    grid-template-areas:
+        ". . ."
+        ". main ."
+        ". main ."
+        ". . .";
+    grid-template-columns: 8% 46rem auto 60%;
+    grid-template-rows: 47% auto auto 25%;
+}
+@media screen and (max-width:767px) {
+    .header-grid{
+        display: flex;
+
+    }
+}
+/* header内の共通flex */
+.header-flex{
+    display: flex;
+    justify-content: center;
+}
+.header-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.header-flex-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+/* header内のmainのbackground */
+.header-contents{
+    padding-top: 0%;
+}
+@media screen and (max-width:767px) {
+    .header-contents{
+        padding-left: calc(15 / 375* 100vw);
+        padding-right: calc(10 / 375* 100vw);
+    }
+}
+.header-background{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/IMG_1243.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding-bottom: 34.5%;
+}
+@media screen and (max-width:767px) {
+    .header-background{
+        width: calc(375 / 375 * 100vw);
+        height: calc(812 / 375 * 100vw);
+        /* background-image: url(../img/cover_1_sp.jpg); */
+    }
+}
+/* header内の半透明background */
+.header-main{
+    width: 100%;
+    height: auto;
+    background-color:rgba(248,240,218,0.6);
+    grid-area: main;
+    margin-top: 7%;
+    padding-bottom: 7%;
+    aspect-ratio: 1/1;
+}
+@media screen and (max-width:767px) {
+    .header-main{
+        width: calc(345 / 375* 100vw);
+        height: calc(351 / 375* 100vw);
+        margin-top: calc(222 / 375* 100vw);
+        padding-bottom: calc(0 / 375* 100vw);
+    }
+}
+/* header内のlogo */
+header img{
+    width: 53%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    header img{
+        width: calc(245 / 375* 100vw);
+        height: calc(29 / 375* 100vw);
+    }
+}
+/* header内の位置などの記述 */
+/* header-title-block 内の位置などの記述*/
+.header-title-block{
+    width: 100%;
+    height: auto;
+}
+.header-logo{
+    width: 100%;
+    height: auto;
+    padding-top: 0%;
+}
+.header-title{
+    width: 100%;
+    height: auto;
+    padding-top: 9.6%;
+}
+h1{
+    font-size: 4.8rem;
+    color: #1A1916;
+}
+.header-fes-place{
+        width: 100%;
+        height: auto;
+        padding-top: 0.5%;
+        letter-spacing: 2px;
+}
+.header-fes-place p{
+    font-size: 2.4rem;
+    color: #1A1916;
+    padding-left: 37%;                
+}
+
+@media screen and (max-width:767px) {
+    .header-title-block{
+        width: calc(345 / 375 * 100vw);
+        height: auto;
+        padding-top: calc(5 / 375 * 100vw);
+    }
+    .header-logo{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        padding-top: calc(23 / 375* 100vw);
+
+    }
+    .header-title{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        padding-top: calc(8 / 375* 100vw);
+        padding-left: calc(13 / 375* 100vw);
+    }
+     h1{
+            font-size: calc(48 / 375 * 100vw);
+
+        }
+    
+    .header-fes-place{
+        width: calc(318 / 375* 100vw);
+        height: auto;
+        padding-top: calc(0 / 375* 100vw);
+        letter-spacing: 2px;
+        justify-content: end;
+    }
+    .header-fes-place p{
+        font-size: calc(24 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+
+}
+/* header-fes-days 内の位置などの記述*/
+header .blue-box{
+    background-color: #1F2774;
+    width: 100%;
+    height: auto;
+}
+
+.header-fes-days{
+    width: 100%;
+    height: auto;
+}
+.header-main-days{
+    width: 70%;
+    height: auto;
+    padding-top: 4.1%;
+}
+.header-main-days p{
+    width: 100%;
+    font-size: 3.2rem;
+    color: #006400;
+    font-weight: bold;
+    text-shadow: 12px 9px 23px #23430C;
+}
+
+.days-fes{
+    width: 54%;
+    height: auto;
+    padding-top: 5.4%;
+    justify-content: unset;
+}
+.header-sub-days{
+    width: 100%;
+    height: auto;
+    width: 64%;
+    height: auto;
+    text-align: center;
+}
+.header-sub-days p{
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px) {
+    header .blue-box{
+        background-color: #1F2774;
+        width: calc(128 / 375 * 100vw);
+        height: auto;
+    }
+    
+    .header-fes-days{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        flex-direction: column;
+    }
+    .header-main-days{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        padding-top: calc(12 / 375* 100vw);
+    }
+    .header-main-days p{
+        width: calc(345 / 375* 100vw);
+        font-size: calc(32 / 375* 100vw);
+        padding-left: calc(66 / 375* 100vw);
+    }
+    .days-fes{
+        width: calc(345 / 375* 100vw);
+        height: calc(35 / 375* 100vw);
+        padding-top: calc(4 / 375* 100vw);
+        padding-left: calc(109 / 375* 100vw);
+        justify-content: unset;
+    }
+    .header-sub-days{
+        width: calc(128 / 375* 100vw);
+        height: auto;
+        text-align: center;
+    }
+    .header-sub-days p{
+        font-size: calc(22 / 375 * 100vw);
+    }
+
+}
+/* header-main-fes-place 内の位置などの記述*/
+.header-main-fes-place{
+    width: 100%;
+    height: auto;
+    padding-top: 3.5%;
+}
+.header-shop{
+    width: 100%;
+    height: auto;
+    padding-left: 7%;
+}
+.header-shop p{
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    color: #1A1916;
+    letter-spacing: 0.5px;
+    text-shadow: 12px 9px 23px #23430C;
+}
+    
+
+
+.header-sns{
+    width: 100%;
+    height: auto;
+    padding-top: 8%;
+}
+.header-sns p{
+    width: 100%;
+    height: auto;
+    font-size: 5.6rem;
+    color: #FFD700;
+    padding-left: 7%;
+    text-shadow: 12px 9px 23px #23430C;
+}
+
+
+@media screen and (max-width:767px) {
+    .header-main-fes-place{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        padding-top: calc(18 / 375* 100vw);
+    }
+    .header-shop{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        padding-left: calc(52 / 375* 100vw);
+    }
+    .header-shop p{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        font-size: calc(20 / 375* 100vw);
+        letter-spacing: 0.3px;
+    }
+
+
+    .header-sns{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        padding-top: calc(12 / 375* 100vw);
+    }
+    .header-sns p{
+        width: calc(345 / 375* 100vw);
+        height: auto;
+        font-size: calc(36 / 375* 100vw);
+        color: #1A1916;
+        padding-left: calc(64 / 375* 100vw);
+    }
+}

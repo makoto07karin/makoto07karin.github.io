@@ -1,0 +1,486 @@
+@charset "UTF-8";
+
+@import url("basics.css");
+/* 下準備は共通でここまでに記述する */
+/* brand_and_event-background 全体の背景色 */
+.mihune-background{
+    background-color: #F8E3A6;
+}
+/* brand_and_event-contents 全体の幅 */
+.mihune-contents{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 6%;
+}
+@media screen and (max-width:767px) {
+    .mihune-contents{
+        width: calc(375 / 375 * 100vw);
+        padding-left: calc(10 / 375 * 100vw);
+        padding-right: calc(0 / 375 * 100vw);
+        padding-bottom: calc(59 / 375 * 100vw);
+    }
+}
+/* textエリアのgrid */
+.text_grid{
+    display: grid;
+    grid-template-areas:
+        ". . ."
+        ". sub00 ."
+        ". main ."
+        ". . .";
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 41% 68% 78% 0%;
+}
+@media screen and (max-width:767px) {
+    .text_grid {
+        grid-template-columns: 0% 98% 0%;
+        grid-template-rows: 41% 48% 50% 0%;
+    }
+}
+.mihune-text{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune-text{
+        width: calc(360 / 375 * 100vw);
+        height: auto;
+    }
+}
+/* textエリアのtext_header*/
+.mihune-text_header{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune-text_header{
+        width: calc(350 / 375 * 100vw);
+        height: auto;
+    }
+}
+
+.mihune-text_lists{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune-text_lists{
+        width: calc(360 / 375 * 100vw);
+        height: auto;
+    }
+}
+.mihune-list00{
+    grid-area: sub00;
+    width: 100%;
+    height: auto;
+    font-size: 4.8rem;
+    color: #1A1916;
+    text-align: center;
+}
+@media screen and (max-width:1080px) {
+    .mihune-list00{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .mihune-list00{
+        width: calc(352 / 375 * 100vw);
+        height: auto;
+        font-size: calc(18 / 375 * 100vw);
+    }
+}
+.mihune-list01{
+    grid-area: main;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    padding-left: 2%;
+}
+
+@media screen and (max-width:767px) {
+    .mihune-list01{
+        width: calc(345 / 375 * 100vw);
+        height: auto;
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+.mihune-list01 h2{
+    width: 100%;
+    height: auto;
+    font-size: 4.782rem;
+    color: #1A1916;
+    margin-right: 3%;
+}
+@media screen and (max-width:1080px) {
+    .mihune-list01 h2{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .mihune-list01 h2{
+        width: calc(375 / 375 * 100vw);
+        height: auto;
+        font-size: calc(18 / 375 * 100vw);
+        margin-right: calc(18 / 375 * 100vw);
+    }
+}
+.mihune-list01 span{
+    padding-right: 0%;
+    font-size: 6rem;
+    color: #7F0019;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+@media screen and (max-width:1080px) {
+    .mihune-list01 span{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .mihune-list01 span{
+        font-size: calc(24 / 375 * 100vw);
+    }
+}
+.mihune-list01 p{
+    padding-right: 1%;
+}
+
+/* brandエリア 背景とgrid*/
+.mihune-main{
+    width: 100%;
+    height: auto;
+    margin-top: 8.8%;
+}
+/* brandエリア 斜めの背景*/
+.mihune-background_border{
+    width: 100%;
+    height: auto;
+    background: repeating-linear-gradient(
+        -45deg,
+        #fff 0 10px,
+        #f8f5ea 10px 20px
+      );
+    border-color: #7F0019;
+    border-style: solid;
+    border-width: 5px;
+    padding-bottom: 4%;
+}
+@media screen and (max-width:767px) {
+    .mihune-background_border{
+        width: calc(350 / 375 * 100vw);
+        margin-top: calc(122 / 375 * 100vw);
+        padding-bottom: calc(113 / 375 * 100vw);
+    }
+}
+/* brandエリア grid部分*/
+.mihune-grid{
+    display: grid;
+    grid-template-areas:
+        ". brand-main-title brand-main-title ."
+        ". brand_a-box  brand_b-box ."
+        ". . . .";
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 20% 81% 2%;
+    row-gap: 1rem;
+    column-gap: 0.8rem;
+}
+@media screen and (max-width:767px) {
+    .mihune-grid{
+        display: grid;
+        grid-template-areas:
+            "brand-main-title"
+            "brand_a-box"
+            "brand_b-box";
+        grid-template-columns: 100%;
+        grid-template-rows: 17% 23% 23% 23% 30%;
+        row-gap: calc(0 / 375 * 100vw);
+        column-gap: calc(0 / 375 * 100vw);
+    }
+}
+/* brandエリア flex部分縦にする*/
+.mihune-title-flex{
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/* brandエリア title部分*/
+.mihune-main-title{
+    width: 100%;
+    height: auto;
+    grid-area: brand-main-title;
+}
+@media screen and (max-width:767px) {
+    .mihune-main-title{
+        width: calc(300 / 375 * 100vw);
+        grid-area: brand-main-title;
+    }
+}
+.mihune-title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3.3%;
+}
+@media screen and (max-width:767px) {
+    .mihune-title{
+        width: calc(300 / 375 * 100vw);
+        padding-top: calc(46 / 375 * 100vw);
+    }
+}
+.mihune-title h2{
+    width: 100%;
+    height: auto;
+    font-size: 5.4rem;
+    color: #1A1916;
+    font-weight: bold;
+}
+@media screen and (max-width:767px) {
+    .mihune-title h2{
+        width: calc(127 / 375 * 100vw);
+        font-size: calc(48 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+    }
+}
+.mihune-title_underline{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+@media screen and (max-width:767px) {
+    .mihune-title_underline{
+        width: calc(341 / 375 * 100vw);
+        padding-top: calc(8 / 375 * 100vw);
+    }
+}
+.mihune-title_underline span{
+    width: 8.7rem;
+    height: 0.5rem;
+    background-color: #7F0019;
+    display: block;
+}
+@media screen and (max-width:767px) {
+    .mihune-title_underline span{
+        width: calc(88 / 375 * 100vw);
+        height: calc(5 / 375 * 100vw);
+    }
+}
+/* brandエリア boxのflex部分*/
+.mihune-flex{
+    display: flex;
+}
+/* brandエリア boxのrow-reverse部分*/
+@media screen and (max-width:767px) {
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+}
+/* brandエリア brand_a-box部分*/
+.mihune_a-box{
+    width: 100%;
+    height: auto;
+    grid-area: brand_a-box;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box{
+        width: calc(340 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+    }
+}
+.mihune_a-box_img{
+    width: 40%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_img{
+        width: calc(145 / 375 * 100vw);
+        padding-top: calc(11 / 375 * 100vw);
+    }
+}
+.mihune_a-box_img img{
+    width: 95%;
+    height: auto;
+    padding-top: 30%;
+    padding-left: 14.6%;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_img img{
+        width: calc(156 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-left: calc(11 / 375 * 100vw);
+    }
+}
+.mihune_a-box_text{
+    width: 60%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_text{
+        width: calc(192 / 375 * 100vw);
+    }
+}
+.mihune_a-box_text_title{
+    width: 100%;
+    height: auto;
+    padding-top: 18.2%;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_text_title{
+        width: calc(180 / 375 * 100vw);
+        padding-top: calc(6 / 375 * 100vw);
+    }
+}
+.mihune_a-box_text_title p{
+    width: 100%;
+    height: auto;
+    font-size: 2.8rem;
+    color: #1A1916;
+    font-weight: bold;
+    padding-left: 6%;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_text_title p{
+        width: calc(157 / 375 * 100vw);
+        font-size: calc(24 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+        padding-left: calc(42 / 375 * 100vw);
+    }
+}
+.mihune_a-box_text_main{
+    width: 91%;
+    height: auto;
+    padding-top: 7%;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_text_main{
+        width: calc(100 / 375 * 100vw);
+        padding-top: calc(14 / 375 * 100vw);
+    }
+}
+.mihune_a-box_text_main p{
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+    color: #1A1916;
+    line-height: 1.7;
+    padding-left: 8%;
+}
+@media screen and (max-width:767px) {
+    .mihune_a-box_text_main p{
+        width: calc(188 / 375 * 100vw);
+        font-size: calc(14 / 375 * 100vw);
+        padding-left: calc(42 / 375 * 100vw);
+        line-height: 1.4;
+    }
+}
+/* brandエリア brand_b-box部分*/
+.mihune_b-box{
+    width: 100%;
+    height: auto;
+    grid-area: brand_b-box;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box{
+        width: calc(340 / 375 * 100vw);
+    }
+}
+.mihune_b-box_img{
+    width: 34%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_img{
+        width: calc(154 / 375 * 100vw);
+    }
+}
+.mihune_b-box_img img{
+    width: 93%;
+    height: auto;
+    padding-top: 35%;
+    padding-left: 0%;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_img img{
+        width: calc(149 / 375 * 100vw);
+        padding-top: calc(4 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+    }
+}
+.mihune_b-box_text{
+    width: 60%;
+    height: auto;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_text{
+        width: calc(175 / 375 * 100vw);
+    }
+}
+.mihune_b-box_text_title{
+    width: 100%;
+    height: auto;
+    padding-top: 18%;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_text_title{
+        width: calc(100 / 375 * 100vw);
+        padding-top: calc(0 / 375 * 100vw);
+    }
+}
+.mihune_b-box_text_title p{
+    width: 100%;
+    height: auto;
+    font-size: 2.8rem;
+    color: #1A1916;
+    font-weight: bold;
+    padding-left: 5%;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_text_title p{
+        width: calc(144 / 375 * 100vw);
+        font-size: calc(24 / 375 * 100vw);
+        padding-top: calc(10 / 375 * 100vw);
+        padding-left: calc(1 / 375 * 100vw);
+        letter-spacing: 4px;
+    }
+}
+.mihune_b-box_text_main{
+    width: 91%;
+    height: auto;
+    padding-top: 7%;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_text_main{
+        width: calc(120 / 375 * 100vw);
+        padding-top: calc(19 / 375 * 100vw);
+    }
+}
+.mihune_b-box_text_main p{
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+    color: #1A1916;
+    line-height: 1.7;
+    padding-left: 8%;
+}
+@media screen and (max-width:767px) {
+    .mihune_b-box_text_main p{
+        width: calc(143 / 375 * 100vw);
+        font-size: calc(14 / 375 * 100vw);
+        padding-left: calc(0 / 375 * 100vw);
+        line-height: 1.4;
+    }
+}

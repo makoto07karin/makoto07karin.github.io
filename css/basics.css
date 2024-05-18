@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: calc(10 / 375 * 100vw);
+      }
+}
+ul li{
+    list-style: none;
+}
+/* cssファイルで今回確実に共通しているもの */
